@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PortFólio | Adoglésio Gomes</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+    <div class="particulas"></div>
+
+
+
+    <nav class="navegacao">
+      <ul class="menu">
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contatos" class="menu-link">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+     
+        <img
+          src="./img/avatar.jpg"
+          alt="Foto de Adoglésio Gomes"
+          class="foto-perfil"
+        />
+        <h1>Adoglésio Gomes</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+      
+    </main>
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+          Olá! Sou Adoglésio Gomes, apaixonado por tecnologia e sempre em busca de aprendizado. Atuo na área de TI, com experiência em suporte técnico, QA e desenvolvimento web/mobile.
+
+Cursando Análise e Desenvolvimento de Sistemas, também sou e Consultor de Suporte Técnico e também atuo como Professor Instrutor de TI, o que me permite compartilhar conhecimento e aprender constantemente as tecnologias.
+
+Tenho conhecimento em HTML, CSS, JavaScript, React.js, React Native, Node.js, APIs REST, Git e SQL, além de experiência com testes manuais e automatizados.
+
+Gosto de unir a parte técnica com a prática, sempre pensando em soluções simples, funcionais e que gerem valor.
+
+Neste portfólio, compartilho um pouco dos projetos que desenvolvi ou participei, com foco em crescimento, aprendizado e impacto real.
+
+
+        </p>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus Projetos</h2>
+      <div class="projetos-caixa">
+
+        <div class="projeto-card">
+          <img src="./img/buscadorCep.png" alt="Projeto 1" class="projeto-imagem" />
+          <div class="caixa-texto-projeto">
+            <h3 class="info-projetos">BuscadorCep</h3>
+          <p class="paragrafo-projetos">Este é um projeto de busca de CEP desenvolvido em React JS. Durante
+            meu treinamento em React JS, aprendi a trabalhar com APIs e decidi
+            criar este projeto para praticar e aplicar meus conhecimentos.</p>
+          </div>
+          
+        </div>
+
+        <div class="projeto-card">
+            <img src="./img/telaLogin.jpeg" alt="Projeto 1" class="projeto-imagem" />
+            <div class="caixa-texto-projeto">
+                <h3 class="info-projetos">Tela de Login HTML e CSS!</h3>
+                <p class="paragrafo-projetos">Este é um projeto simples de uma tela de login desenvolvida usando
+                HTML e CSS. A tela é responsiva e oferece uma experiência de usuário
+                limpa e amigável.</p>
+            </div>
+            
+          </div>
+
+          <div class="projeto-card">
+            <img src="./img/gpsVots.jpeg" alt="Projeto 1" class="projeto-imagem" />
+            <div class="caixa-texto-projeto">
+                <h3 class="info-projetos">GPSVotos</h3>
+            <p class="paragrafo-projetos">O GPSVotos é uma ferramenta criada para ajudar um candidato a
+                organizar visitas e entender melhor as necessidades dos eleitores,
+                como atendimento hospitalar e outros serviços, otimizando a campanha
+                com base nas informações coletadas diretamente nas comunidades.</p>
+            </div>
+            
+          </div>
+
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulos">Entre em Contato</h2>
+        <form action="#" class="formulario-contato" id="formulario" onsubmit="enviarWhatsApp(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite" id="mensagem" rows="8"></textarea>
+            </div>
+            <button  type="submit" class="botao-form">Enviar WhatsApp</button> 
+        </form>
+    </section>
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>
