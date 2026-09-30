@@ -1,111 +1,593 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
 
-    <title>PortFólio | Adoglésio Gomes</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
+  <title>Adoglésio Gomes | Analista de QA — Testes Manuais e Automatizados</title>
+  <meta name="description"
+    content="Analista de QA com mais de 10 anos em TI. Testes manuais e automatizados, testes funcionais e de regressão, análise de bugs e homologação com Robot Framework, Selenium, Cypress, Postman e SQL." />
+  <meta name="author" content="Adoglésio Gomes" />
+  <meta name="keywords"
+    content="Analista de QA, Quality Assurance, Testes de Software, Testes Manuais, Automação de Testes, QA Automation, Robot Framework, Selenium, Cypress, Postman, SQL, BDD, Gherkin" />
+  <meta name="theme-color" content="#070C17" />
 
-    <div class="particulas"></div>
+  <!-- TROQUE a URL abaixo pelo endereço final do site (ex.: https://adoglesio.github.io/portfolio/) -->
+  <link rel="canonical" href="https://SEU-DOMINIO.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Adoglésio Gomes" />
+  <meta property="og:url" content="https://SEU-DOMINIO.com/" />
+  <meta property="og:title" content="Adoglésio Gomes | Analista de QA — Testes Manuais e Automatizados" />
+  <meta property="og:description"
+    content="Qualidade de software, análise de problemas e melhoria contínua. Mais de 10 anos em TI, hoje atuando com QA." />
+  <meta property="og:image" content="https://SEU-DOMINIO.com/img/avatar.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Adoglésio Gomes | Analista de QA" />
+  <meta name="twitter:description"
+    content="Qualidade de software, análise de problemas e melhoria contínua. Mais de 10 anos em TI, hoje atuando com QA." />
+  <meta name="twitter:image" content="https://SEU-DOMINIO.com/img/avatar.jpg" />
 
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./img/avatar.jpg" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <nav class="navegacao">
-      <ul class="menu">
-        <li><a href="#inicio" class="menu-link">Início</a></li>
-        <li><a href="#sobre" class="menu-link">Sobre</a></li>
-        <li><a href="#projetos" class="menu-link">Projetos</a></li>
-        <li><a href="#contatos" class="menu-link">Contato</a></li>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adoglésio Gomes",
+    "jobTitle": "Analista de QA",
+    "description": "Profissional de TI com mais de 10 anos de experiência em suporte técnico, atuando com QA, testes manuais e automatizados.",
+    "url": "https://SEU-DOMINIO.com/",
+    "sameAs": ["https://github.com/adoglesio"],
+    "knowsAbout": ["Quality Assurance", "Testes de Software", "Robot Framework", "Selenium WebDriver", "Cypress", "Postman", "SQL", "BDD"],
+    "alumniOf": "Análise e Desenvolvimento de Sistemas",
+    "worksFor": { "@type": "Organization", "name": "Adsoft Gestão Empresarial" }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="pular-link" href="#inicio">Pular para o conteúdo</a>
+
+  <header class="navegacao" id="topo">
+    <div class="navegacao-interna">
+      <a href="#inicio" class="marca">
+        <span class="marca-sigla">AG</span>
+        <span class="marca-texto">Adoglésio Gomes<small>Analista de QA</small></span>
+      </a>
+
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="menu"
+        aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio" class="menu-link">Início</a></li>
+          <li><a href="#sobre" class="menu-link">Sobre</a></li>
+          <li><a href="#experiencia" class="menu-link">Experiência</a></li>
+          <li><a href="#qa" class="menu-link">QA</a></li>
+          <li><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li><a href="#tecnologias" class="menu-link">Tecnologias</a></li>
+          <li><a href="#formacao" class="menu-link">Formação</a></li>
+          <li><a href="#contato" class="menu-link menu-link-destaque">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HOME ================= -->
+    <section id="inicio" class="hero">
+      <div class="hero-brilho" aria-hidden="true"></div>
+
+      <div class="secao-interna hero-grade">
+        <div class="hero-texto">
+          <p class="hero-status"><span class="ponto" aria-hidden="true"></span> Aberto a oportunidades em QA</p>
+          <h1>Analista de QA<span class="barra" aria-hidden="true"></span>Testes manuais e automatizados</h1>
+          <p class="hero-sub">Qualidade de software, análise de problemas e melhoria contínua.</p>
+          <p class="hero-apoio">
+            Mais de 10 anos em TI, sempre perto do usuário e do sistema rodando de verdade. Hoje aplico essa bagagem
+            testando, documentando e homologando software.
+          </p>
+
+          <div class="hero-acoes">
+            <a href="#projetos" class="botao botao-solido">Ver projetos</a>
+            <a href="#experiencia" class="botao botao-vazado">Conhecer minha experiência</a>
+            <a href="https://github.com/adoglesio" class="botao botao-texto" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero-foto">
+          <img src="./img/avatar.jpg" width="320" height="320" alt="Foto de Adoglésio Gomes" class="foto-perfil" />
+          <figcaption class="hero-legenda">
+            <strong>Adoglésio Gomes</strong>
+            Suporte técnico e QA na Adsoft desde 2017
+          </figcaption>
+        </figure>
+      </div>
+
+      <ul class="hero-marcas secao-interna">
+        <li><strong>10+</strong> anos de experiência em TI</li>
+        <li><strong>Testes</strong> funcionais, regressivos e exploratórios</li>
+        <li><strong>Manual e automatizado</strong> com Robot, Selenium e Cypress</li>
       </ul>
-    </nav>
+    </section>
 
-    <main id="inicio" class="cabecalho">
-     
-        <img
-          src="./img/avatar.jpg"
-          alt="Foto de Adoglésio Gomes"
-          class="foto-perfil"
-        />
-        <h1>Adoglésio Gomes</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
-      
-    </main>
-    <section id="sobre" class="sobre">
-      <h2 class="sobre-titulo">Sobre Mim</h2>
-      <div class="sobre-caixa">
-        <p class="sobre-paragrafo">
-          Olá! Sou Adoglésio Gomes, apaixonado por tecnologia e sempre em busca de aprendizado. Atuo na área de TI, com experiência em suporte técnico, QA e desenvolvimento web/mobile.
+    <!-- ================= SOBRE ================= -->
+    <section id="sobre" class="secao">
+      <div class="secao-interna secao-estreita">
+        <h2 class="secao-titulo">Sobre mim</h2>
+        <div class="sobre-texto">
+          <p>
+            Trabalho com tecnologia há mais de 10 anos. Comecei no suporte técnico, atendendo cliente, implantando
+            sistema, configurando ambiente e treinando usuário — e foi ali que aprendi como um software se comporta
+            quando sai do ambiente controlado e vai para o dia a dia de quem usa.
+          </p>
+          <p>
+            Hoje direciono minha carreira para QA. Testo sistemas web e desktop, escrevo e executo cenários de teste,
+            documento bugs, valido correções e participo da homologação de novas versões. Trabalho lado a lado com o
+            time de desenvolvimento: reproduzo o erro, mostro o caminho, acompanho a correção e testo de novo.
+          </p>
+          <p>
+            Minha experiência de suporte virou um diferencial no QA. Conheço regra de negócio, sei de onde vêm os
+            incidentes mais comuns e consigo enxergar o impacto real de um bug antes dele chegar no cliente. É esse
+            olhar que trago para os testes: prático, analítico e focado em evitar retrabalho.
+          </p>
+        </div>
+      </div>
+    </section>
 
-Cursando Análise e Desenvolvimento de Sistemas, também sou e Consultor de Suporte Técnico e também atuo como Professor Instrutor de TI, o que me permite compartilhar conhecimento e aprender constantemente as tecnologias.
+    <!-- ================= EXPERIÊNCIA ================= -->
+    <section id="experiencia" class="secao secao-alternada">
+      <div class="secao-interna">
+        <h2 class="secao-titulo">Experiência</h2>
+        <p class="secao-intro">Trajetória em TI, do atendimento ao usuário à qualidade de software.</p>
 
-Tenho conhecimento em HTML, CSS, JavaScript, React.js, React Native, Node.js, APIs REST, Git e SQL, além de experiência com testes manuais e automatizados.
+        <ol class="linha-tempo">
+          <li class="tempo-item tempo-item-destaque">
+            <div class="tempo-marcador" aria-hidden="true"></div>
+            <p class="tempo-periodo">05/2017 — Atual</p>
+            <h3 class="tempo-cargo">Analista de Suporte / QA</h3>
+            <p class="tempo-empresa">Adsoft Gestão Empresarial</p>
+            <ul class="tempo-lista">
+              <li>Testes manuais e automatizados em sistemas web e desktop</li>
+              <li>Testes funcionais e de regressão a cada nova versão</li>
+              <li>Análise, reprodução e documentação de bugs</li>
+              <li>Validação de correções e homologação de versões</li>
+              <li>Consultas SQL para investigar dados e confirmar comportamento</li>
+              <li>Testes de APIs com Postman</li>
+              <li>Trabalho conjunto com o time de desenvolvimento</li>
+              <li>Suporte técnico especializado em ERP, implantação e atualização de sistemas</li>
+              <li>Atendimento, orientação e treinamento de usuários</li>
+            </ul>
 
-Gosto de unir a parte técnica com a prática, sempre pensando em soluções simples, funcionais e que gerem valor.
+            <div class="tempo-nota">
+              <h4>Diferencial: domínio de negócio</h4>
+              <p>
+                Atuo com ERPs usados em varejo, supermercados, restaurantes, bares, autopeças, logística e
+                informática, em processos de PDV, estoque, compras, financeiro, contas a pagar e receber e
+                faturamento — incluindo emissão de documentos fiscais (NF-e, NFC-e, CT-e, MDF-e). Isso me ajuda a
+                testar com contexto: sei o que o usuário espera do sistema e o que não pode falhar.
+              </p>
+            </div>
+          </li>
 
-Neste portfólio, compartilho um pouco dos projetos que desenvolvi ou participei, com foco em crescimento, aprendizado e impacto real.
+          <li class="tempo-item">
+            <div class="tempo-marcador" aria-hidden="true"></div>
+            <h3 class="tempo-cargo">Professor Instrutor de Ensino e Aprendizagem em Serviços</h3>
+            <p class="tempo-empresa">Ensino de tecnologia e formação de usuários</p>
+            <p class="tempo-resumo">
+              Ensinar me obrigou a explicar processo com clareza e a antecipar onde as pessoas erram — duas coisas que
+              uso todo dia ao documentar um bug ou escrever um cenário de teste.
+            </p>
+          </li>
 
+          <li class="tempo-item">
+            <div class="tempo-marcador" aria-hidden="true"></div>
+            <h3 class="tempo-cargo">Experiências anteriores</h3>
+            <p class="tempo-empresa">Funções administrativas, TI, arquivo, digitalização e suporte</p>
+            <p class="tempo-resumo">
+              Base de organização, rotina e atenção a detalhe, trabalhando com grandes volumes de informação.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
+    <!-- ================= QA ================= -->
+    <section id="qa" class="secao">
+      <div class="secao-interna">
+        <h2 class="secao-titulo">QA e qualidade</h2>
+        <p class="secao-intro">O que eu faço na prática quando entro em um ciclo de testes.</p>
+
+        <div class="qa-grade">
+          <div class="qa-blocos">
+            <article class="qa-bloco">
+              <h3>Testes manuais e exploratórios</h3>
+              <p>
+                Executo testes funcionais, de regressão e exploratórios, procurando tanto o que a especificação pede
+                quanto o caminho que o usuário realmente faz.
+              </p>
+            </article>
+
+            <article class="qa-bloco">
+              <h3>Cenários de teste</h3>
+              <p>
+                Crio e executo cenários cobrindo fluxo principal, alternativo e de erro, escrevendo em BDD/Gherkin
+                quando o time trabalha nesse formato.
+              </p>
+            </article>
+
+            <article class="qa-bloco">
+              <h3>Análise e documentação de bugs</h3>
+              <p>
+                Registro o defeito com passo a passo para reproduzir, resultado esperado, resultado obtido e evidência
+                — o suficiente para o desenvolvedor não precisar adivinhar.
+              </p>
+            </article>
+
+            <article class="qa-bloco">
+              <h3>Validação e homologação</h3>
+              <p>
+                Reteste da correção, verificação de impacto em áreas relacionadas e homologação da versão antes de
+                liberar para o cliente.
+              </p>
+            </article>
+
+            <article class="qa-bloco">
+              <h3>Automação de testes</h3>
+              <p>
+                Trabalho com Robot Framework (web e mobile), Selenium WebDriver e Cypress para automatizar fluxos
+                repetitivos e a bateria de regressão.
+              </p>
+            </article>
+
+            <article class="qa-bloco">
+              <h3>APIs e banco de dados</h3>
+              <p>
+                Testo APIs no Postman, validando status, payload e regras de resposta, e uso SQL para conferir os
+                dados por trás da tela.
+              </p>
+            </article>
+          </div>
+
+          <aside class="qa-cenario" aria-label="Exemplo de cenário de teste em Gherkin">
+            <header class="qa-cenario-topo">
+              <span class="qa-arquivo">venda_pdv.feature</span>
+              <span class="qa-selo">Passou</span>
+            </header>
+            <pre><code><span class="g-key">Funcionalidade:</span> Venda no PDV
+
+<span class="g-key">Cenário:</span> Finalizar venda com pagamento em cartão
+  <span class="g-step">Dado</span> que o operador iniciou uma venda
+  <span class="g-step">E</span> adicionou um produto com estoque disponível
+  <span class="g-step">Quando</span> finalizar o pagamento em cartão
+  <span class="g-step">Então</span> o cupom deve ser emitido
+  <span class="g-step">E</span> o estoque do produto deve ser baixado</code></pre>
+            <p class="qa-cenario-rodape">
+              Escrever o cenário antes de testar deixa claro o que é falha de sistema e o que é regra de negócio.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJETOS ================= -->
+    <section id="projetos" class="secao secao-alternada">
+      <div class="secao-interna">
+        <h2 class="secao-titulo">Projetos de QA</h2>
+        <p class="secao-intro">Projetos práticos de testes e automação, com código aberto no GitHub.</p>
+
+        <div class="qa-projetos">
+          <article class="projeto-qa">
+            <h3 class="projeto-qa-titulo">QA Ninja — Buger Eats</h3>
+            <p class="projeto-qa-texto">
+              Projeto prático de automação de testes end-to-end sobre a aplicação Buger Eats, cobrindo o fluxo de
+              cadastro e validações de formulário. Usei para consolidar estrutura de projeto de automação, organização
+              de cenários e execução da suíte.
+            </p>
+            <ul class="etiquetas">
+              <li>Automação</li>
+              <li>Testes E2E</li>
+              <li>Cenários de teste</li>
+            </ul>
+            <a class="link-repo" href="https://github.com/adoglesio/QAninja-buger-eats" target="_blank"
+              rel="noopener noreferrer">Ver repositório no GitHub</a>
+          </article>
+
+          <article class="projeto-qa">
+            <h3 class="projeto-qa-titulo">PrimeHero</h3>
+            <p class="projeto-qa-texto">
+              Projeto de estudo voltado a testes e automação, desenvolvido durante formação em QA. Serviu para praticar
+              escrita de casos de teste, execução automatizada e leitura de resultados.
+            </p>
+            <ul class="etiquetas">
+              <li>Automação</li>
+              <li>Prática de QA</li>
+            </ul>
+            <a class="link-repo" href="https://github.com/adoglesio/PrimeHero" target="_blank"
+              rel="noopener noreferrer">Ver repositório no GitHub</a>
+          </article>
+        </div>
+
+        <h3 class="subsecao-titulo" id="outros-projetos">Outros projetos de desenvolvimento</h3>
+        <p class="secao-intro secao-intro-menor">
+          Projetos de estudo em front-end e back-end. Ajudam no QA: quanto mais eu entendo de código, melhor eu testo.
+        </p>
+
+        <div class="projetos-caixa">
+          <article class="projeto-card">
+            <img src="./img/buscadorCep.png" width="400" height="200" loading="lazy" alt="Tela do projeto BuscadorCep"
+              class="projeto-imagem" />
+            <div class="caixa-texto-projeto">
+              <h4 class="info-projetos">BuscadorCep</h4>
+              <p class="paragrafo-projetos">
+                Busca de CEP feita em React durante meu treinamento, para praticar consumo de API e tratamento de
+                resposta.
+              </p>
+              <ul class="etiquetas">
+                <li>React</li>
+                <li>API REST</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="projeto-card">
+            <img src="./img/telaLogin.jpeg" width="400" height="200" loading="lazy" alt="Tela de login em HTML e CSS"
+              class="projeto-imagem" />
+            <div class="caixa-texto-projeto">
+              <h4 class="info-projetos">Tela de login</h4>
+              <p class="paragrafo-projetos">
+                Tela de login responsiva em HTML e CSS, com foco em layout limpo e comportamento em telas pequenas.
+              </p>
+              <ul class="etiquetas">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="projeto-card">
+            <img src="./img/gpsVots.jpeg" width="400" height="200" loading="lazy" alt="Tela do projeto GPSVotos"
+              class="projeto-imagem" />
+            <div class="caixa-texto-projeto">
+              <h4 class="info-projetos">GPSVotos</h4>
+              <p class="paragrafo-projetos">
+                Ferramenta para organizar visitas e registrar necessidades levantadas nas comunidades, usando as
+                informações coletadas para orientar as próximas ações.
+              </p>
+              <ul class="etiquetas">
+                <li>Coleta de dados</li>
+                <li>Web</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="projeto-card projeto-card-simples">
+            <div class="caixa-texto-projeto">
+              <h4 class="info-projetos">Sistema bancário em Python</h4>
+              <p class="paragrafo-projetos">
+                Aplicação de estudo com operações de depósito, saque e extrato, trabalhando regras e validações.
+              </p>
+              <ul class="etiquetas">
+                <li>Python</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="projeto-card projeto-card-simples">
+            <div class="caixa-texto-projeto">
+              <h4 class="info-projetos">Sites institucionais</h4>
+              <p class="paragrafo-projetos">
+                Páginas institucionais desenvolvidas com HTML, CSS e JavaScript, com atenção à responsividade.
+              </p>
+              <ul class="etiquetas">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="projeto-card projeto-card-simples">
+            <div class="caixa-texto-projeto">
+              <h4 class="info-projetos">Estudos com React e Node.js</h4>
+              <p class="paragrafo-projetos">
+                Projetos menores em React e Node.js para entender melhor o funcionamento de front-end e back-end.
+              </p>
+              <ul class="etiquetas">
+                <li>React</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <p class="projetos-rodape">
+          <a class="link-repo" href="https://github.com/adoglesio" target="_blank" rel="noopener noreferrer">
+            Ver todos os repositórios no GitHub
+          </a>
         </p>
       </div>
     </section>
 
-    <section id="projetos" class="projetos">
-      <h2 class="projetos-titulo">Meus Projetos</h2>
-      <div class="projetos-caixa">
+    <!-- ================= TECNOLOGIAS ================= -->
+    <section id="tecnologias" class="secao">
+      <div class="secao-interna">
+        <h2 class="secao-titulo">Tecnologias</h2>
+        <p class="secao-intro">Ferramentas e práticas que uso no trabalho e nos estudos.</p>
 
-        <div class="projeto-card">
-          <img src="./img/buscadorCep.png" alt="Projeto 1" class="projeto-imagem" />
-          <div class="caixa-texto-projeto">
-            <h3 class="info-projetos">BuscadorCep</h3>
-          <p class="paragrafo-projetos">Este é um projeto de busca de CEP desenvolvido em React JS. Durante
-            meu treinamento em React JS, aprendi a trabalhar com APIs e decidi
-            criar este projeto para praticar e aplicar meus conhecimentos.</p>
-          </div>
-          
+        <div class="tec-grade">
+          <section class="tec-grupo tec-grupo-principal">
+            <h3>QA e testes</h3>
+            <ul>
+              <li>Robot Framework</li>
+              <li>Selenium WebDriver</li>
+              <li>Cypress</li>
+              <li>Postman</li>
+              <li>Testes manuais</li>
+              <li>Testes funcionais</li>
+              <li>Testes de regressão</li>
+              <li>BDD / Gherkin</li>
+            </ul>
+          </section>
+
+          <section class="tec-grupo">
+            <h3>Desenvolvimento</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </section>
+
+          <section class="tec-grupo">
+            <h3>Banco de dados</h3>
+            <ul>
+              <li>SQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </section>
+
+          <section class="tec-grupo">
+            <h3>Ferramentas</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Linux</li>
+              <li>Power BI</li>
+            </ul>
+          </section>
+
+          <section class="tec-grupo">
+            <h3>Metodologias</h3>
+            <ul>
+              <li>Scrum</li>
+              <li>Kanban</li>
+            </ul>
+          </section>
         </div>
-
-        <div class="projeto-card">
-            <img src="./img/telaLogin.jpeg" alt="Projeto 1" class="projeto-imagem" />
-            <div class="caixa-texto-projeto">
-                <h3 class="info-projetos">Tela de Login HTML e CSS!</h3>
-                <p class="paragrafo-projetos">Este é um projeto simples de uma tela de login desenvolvida usando
-                HTML e CSS. A tela é responsiva e oferece uma experiência de usuário
-                limpa e amigável.</p>
-            </div>
-            
-          </div>
-
-          <div class="projeto-card">
-            <img src="./img/gpsVots.jpeg" alt="Projeto 1" class="projeto-imagem" />
-            <div class="caixa-texto-projeto">
-                <h3 class="info-projetos">GPSVotos</h3>
-            <p class="paragrafo-projetos">O GPSVotos é uma ferramenta criada para ajudar um candidato a
-                organizar visitas e entender melhor as necessidades dos eleitores,
-                como atendimento hospitalar e outros serviços, otimizando a campanha
-                com base nas informações coletadas diretamente nas comunidades.</p>
-            </div>
-            
-          </div>
-
+      </div>
     </section>
 
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulos">Entre em Contato</h2>
-        <form action="#" class="formulario-contato" id="formulario" onsubmit="enviarWhatsApp(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
-            </div>
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite" id="mensagem" rows="8"></textarea>
-            </div>
-            <button  type="submit" class="botao-form">Enviar WhatsApp</button> 
-        </form>
-    </section>
-    <script src="./js/script.js"></script>
+    <!-- ================= FORMAÇÃO ================= -->
+    <section id="formacao" class="secao secao-alternada">
+      <div class="secao-interna">
+        <h2 class="secao-titulo">Formação e certificações</h2>
 
-  </body>
+        <div class="formacao-grade">
+          <div class="formacao-academica">
+            <h3 class="subsecao-titulo">Formação acadêmica</h3>
+            <div class="cartao-formacao">
+              <h4>Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</h4>
+            </div>
+          </div>
+
+          <div class="formacao-cursos">
+            <h3 class="subsecao-titulo">Cursos de QA</h3>
+            <ul class="lista-cursos">
+              <li>
+                <h4>Robot Framework Mobile</h4>
+                <p>PRIME QA WEEK</p>
+              </li>
+              <li>
+                <h4>Iniciando com Linux para QAs</h4>
+                <p>Bee Lab Community</p>
+              </li>
+              <li>
+                <h4>Cypress Discovery</h4>
+              </li>
+              <li>
+                <h4>Projetos Ágeis com Scrum</h4>
+              </li>
+              <li>
+                <h4>Selenium WebDriver com Robot Framework</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section id="contato" class="secao">
+      <div class="secao-interna secao-estreita">
+        <h2 class="secao-titulo">Contato</h2>
+        <p class="secao-intro">
+          Estou aberto a oportunidades em QA. Me chame para conversar sobre uma vaga, um projeto ou uma dúvida técnica.
+        </p>
+
+        <div class="contato-grade">
+          <ul class="contato-links">
+            <li>
+              <a href="https://github.com/adoglesio" target="_blank" rel="noopener noreferrer">
+                <span class="contato-rotulo">GitHub</span>
+                <span class="contato-valor">github.com/adoglesio</span>
+              </a>
+            </li>
+            <li>
+              <!-- TROQUE pelo seu perfil real do LinkedIn -->
+              <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener noreferrer">
+                <span class="contato-rotulo">LinkedIn</span>
+                <span class="contato-valor">linkedin.com/in/SEU-USUARIO</span>
+              </a>
+            </li>
+            <li>
+              <!-- TROQUE pelo seu e-mail real -->
+              <a href="mailto:seu-email@exemplo.com">
+                <span class="contato-rotulo">E-mail</span>
+                <span class="contato-valor">seu-email@exemplo.com</span>
+              </a>
+            </li>
+          </ul>
+
+          <form class="formulario-contato" id="formulario" novalidate>
+            <div class="grupo-form">
+              <label for="nome">Seu nome</label>
+              <input id="nome" name="nome" class="campo-form" type="text" autocomplete="name" required
+                aria-describedby="erro-nome" />
+              <p class="erro-campo" id="erro-nome" role="alert" hidden>Informe seu nome.</p>
+            </div>
+
+            <div class="grupo-form">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="campo-form" rows="6" required
+                aria-describedby="erro-mensagem"></textarea>
+              <p class="erro-campo" id="erro-mensagem" role="alert" hidden>Escreva uma mensagem.</p>
+            </div>
+
+            <button type="submit" class="botao botao-solido botao-largo">Enviar pelo WhatsApp</button>
+            <p class="form-aviso">A mensagem abre no WhatsApp para você conferir antes de enviar.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="secao-interna rodape-interno">
+      <p>Adoglésio Gomes — Analista de QA | Testes manuais e automatizados</p>
+      <a href="#topo" class="rodape-topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+
 </html>
